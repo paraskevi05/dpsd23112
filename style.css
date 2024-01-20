@@ -1,0 +1,320 @@
+/* background-color + fonts */
+body {
+    background-color: #186F65;
+
+}
+
+#artist {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.titles {
+    text-align: center;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: #f8fae5d7;
+    font-size: xx-large;
+    text-shadow: 2px 2px 5px black;
+}
+
+
+/* avatar */
+div img {
+    height: auto;
+    width: 135px;
+}
+
+
+/* μενού πλοήγησης */
+nav ul {
+    list-style-type: none;
+    background-color: #F8FAE5;
+    overflow: hidden;
+    margin: 0px;
+    padding: 0px;
+    width: 20em;
+}
+
+nav ul li {
+    float: left;
+}
+
+nav ul li a {
+    color: #503C3C;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 0.875em 1em;
+    display: block;
+}
+
+.active {
+    background-color: #A87C7C;
+}
+
+li a:hover:not(.active) {
+    background-color: #A87C7C;
+}
+
+.logo {
+    float: left;
+}
+
+main {
+    clear: both;
+}
+
+/* social */
+#facebook {
+    width: 50px;
+    height: 50px;
+    margin: 0;
+    padding: 0;
+    background:
+        url(images/facebook.png) no-repeat;
+    text-indent: -9999px;
+    float: right;
+}
+
+#instagram {
+    width: 50px;
+    height: 50px;
+    margin: 0px ;
+    padding: 28px;
+    background:
+        url(images/instagram.png) no-repeat;
+    text-indent: -9999px;
+    float: right;
+}
+
+#youtube {
+    width: 60px;
+    height: 50px;
+    margin: 2px;
+    padding: 34px;
+    background:
+        url(images/youtube.png) no-repeat;
+    text-indent: -9999px;
+    float: right;
+}
+
+#whatsapp {
+    width: 50px;
+    height: 50px;
+    margin: 0;
+    padding: 28px;
+    background:
+        url(images/whatsapp.png) no-repeat;
+    text-indent: -9999px;
+    float: right;
+}
+
+/* footer */
+footer {
+    background-color: #A87C7C;
+    color: #503C3C;
+    clear: both;
+}
+
+/* photos from title */
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 450px;
+  position: relative;
+  margin: auto;
+}
+
+/* Make the images invisible by default */
+.Containers {
+  display: none;
+}
+
+/* forward & Back buttons */
+.Back, .forward {
+  cursor: pointer;
+  position: absolute;
+  top: 48%;
+  width: auto;
+  margin-top: -23px;
+  padding: 17px;
+  color: grey;
+  font-weight: bold;
+  font-size: 19px;
+  transition: 0.4s ease;
+  border-radius: 0 5px 5px 0;
+  user-select: none;
+}
+
+/* Place the "forward button" to the right */
+.forward {
+  right: 0;
+  border-radius: 4px 0 0 4px;
+}
+
+/*when the user hovers,add a black background with some little opacity */
+.Back:hover, .forward:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* The circles or bullets indicators */
+.dots {
+  cursor: pointer;
+  height: 16px;
+  width: 16px;
+  margin: 0 3px;
+  background: linear-gradient(92.18deg, #B19470 -25.78%, #76453B 123.02%);
+  opacity: 0.3;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.5s ease;
+}
+
+.enable, .dots:hover {
+  background: linear-gradient(92.18deg, #B19470 -25.78%, #76453B 123.02%);
+  opacity: 1;
+}
+
+/* Faint animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.4s;
+  animation-name: fade;
+  animation-duration: 1.4s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .5}
+  to {opacity: 2}
+}
+
+@keyframes fade {
+  from {opacity: .5}
+  to {opacity: 2}
+}
+
+/* projects */
+.art {
+    display: grid;
+    grid-template-columns: repeat(3, 300px);
+    grid-gap: 1em;
+    justify-content: center;
+}
+
+.art img {
+    width: 100%;
+    height: auto;
+}
+
+.location-listing {
+    position: relative;
+    overflow: hidden;
+}
+
+.location-title {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: #76453B;
+
+    /* typographic styles */
+    color: white;
+    font-size: 1.5em;
+    font-weight: bold;
+    text-decoration: none;
+
+    /* position the text centrally*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    /* hide the title by default */
+    opacity: 0;
+    transition: opacity .5s;
+    z-index: 1;
+}
+
+.location-image {
+    line-height: 0;
+}
+
+
+.location-listing:hover .location-title {
+    opacity: 1;
+}
+
+.location-image img {
+    filter: blur(0px);
+    transition: filter 0.3s ease-in;
+    transform: scale(1.1);
+}
+
+.location-listing:hover .location-image img {
+    filter: blur(2px);
+}
+#keimeno {
+    font-style: inherit;
+    font-size: large;
+}
+/* line for work */
+.line{
+    height: 2px;
+    background: #F8FAE5;
+width: 40%;
+}
+/* Μορφοποιήσεις work */
+.titles1 {
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: #f8fae5d7;
+    font-size: x-large;
+    text-shadow: 2px 2px 5px black;
+}
+.work1 {
+    line-height: 1px;
+}
+.bold{
+    font-weight: bold;
+}
+/* home_page_photo */
+#homepagephoto{
+    width: 340px;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+/* breadcrumbs */
+/* Style the list */
+.breadcrumb{
+    clear: both;
+}
+ul.breadcrumb {
+    list-style: none;
+    background-color: #A87C7C;
+  }
+  
+  /* Display list items side by side */
+  ul.breadcrumb li {
+    display: inline;
+    font-size: 18px;
+  }
+  
+  /* Add a slash symbol (/) before/behind each list item */
+  ul.breadcrumb li+li:before {
+    padding: 8px;
+    color: #503C3C;
+    content: "/\00a0";
+  }
+  
+  /* Add a color to all links inside the list */
+  ul.breadcrumb li a {
+    color: #503C3C;
+    text-decoration: none;
+  }
+  
+  /* Add a color on mouse-over */
+  ul.breadcrumb li a:hover {
+    color: #01447e;
+    text-decoration: underline;
+  }
